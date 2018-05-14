@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import <AddressBook/AddressBook.h>
+
 @interface AppDelegate ()
 
 @end
@@ -16,8 +18,30 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [self requestAuthorizationAddressBook];
+    
     return YES;
+}
+
+- (void)requestAuthorizationAddressBook {
+    
+    // 判断是否授权
+    ABAuthorizationStatus authorizationStatus = ABAddressBookGetAuthorizationStatus();
+    if (authorizationStatus == kABAuthorizationStatusNotDetermined) {
+        
+        // 请求授权
+        ABAddressBookRef addressBookRef =  ABAddressBookCreate();
+        ABAddressBookRequestAccessWithCompletion(addressBookRef, ^(bool granted, CFErrorRef error) {
+            
+            if (granted) { // 授权成功
+                
+            } else { // 授权失败
+                
+                NSLog(@"授权失败！");
+            }
+        });
+    }
 }
 
 

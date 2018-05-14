@@ -15,6 +15,7 @@
 		84B08B5220A9761700CB9470 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B08B5120A9761700CB9470 /* main.m */; };
 		84B08B5C20A9761800CB9470 /* AddressBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B08B5B20A9761800CB9470 /* AddressBookTests.m */; };
 		84B08B6720A9761800CB9470 /* AddressBookUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B08B6620A9761800CB9470 /* AddressBookUITests.m */; };
+		84B08B7620A97AE200CB9470 /* GetAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B08B7520A97AE200CB9470 /* GetAddressBook.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		84B08B6220A9761800CB9470 /* AddressBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AddressBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B08B6620A9761800CB9470 /* AddressBookUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddressBookUITests.m; sourceTree = "<group>"; };
 		84B08B6820A9761800CB9470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84B08B7420A97AE200CB9470 /* GetAddressBook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetAddressBook.h; sourceTree = "<group>"; };
+		84B08B7520A97AE200CB9470 /* GetAddressBook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetAddressBook.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				84B08B4320A9760700CB9470 /* AppDelegate.m */,
 				84B08B4520A9760700CB9470 /* ViewController.h */,
 				84B08B4620A9760700CB9470 /* ViewController.m */,
+				84B08B7420A97AE200CB9470 /* GetAddressBook.h */,
+				84B08B7520A97AE200CB9470 /* GetAddressBook.m */,
 				84B08B4820A9760700CB9470 /* Main.storyboard */,
 				84B08B4B20A9761700CB9470 /* Assets.xcassets */,
 				84B08B4D20A9761700CB9470 /* LaunchScreen.storyboard */,
@@ -262,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84B08B7620A97AE200CB9470 /* GetAddressBook.m in Sources */,
 				84B08B4720A9760700CB9470 /* ViewController.m in Sources */,
 				84B08B5220A9761700CB9470 /* main.m in Sources */,
 				84B08B4420A9760700CB9470 /* AppDelegate.m in Sources */,
@@ -435,6 +441,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AddressBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -451,6 +458,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AddressBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
